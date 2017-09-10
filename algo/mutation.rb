@@ -3,7 +3,11 @@
 # the first string, and false otherwise.
 
 def mutation?(base_word, mutation)
-
+  # mutation_letters = mutation.split('')
+  base_letters = base_word.split('')
+  mutation.each_char do |letter|
+    letter.include?(base_letters)
+  end
 end
 
 # Driver code - don't touch anything below this line.
