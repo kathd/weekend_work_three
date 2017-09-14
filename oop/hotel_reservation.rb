@@ -40,6 +40,6 @@ hotel_reservation.add_a_crib
 p hotel_reservation.amenities
 
 # The add_a_custom_amenity method
-hotel_reservation.add_a_custom_amenity("bathtub")
+hotel_reservation.add_a_custom_amenity("air conditioner")
 p hotel_reservation.amenities
 
