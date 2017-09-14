@@ -28,7 +28,18 @@ end
 
 # Write your own driver code below! Make sure your code tests the following:
 # The ability to change a room number even after a reservation has already been created
+hotel_reservation = HotelReservation.new(room_number: 45)
+puts "Let's change the room number to #{hotel_reservation.room_number}"
+
 # The add_a_fridge method
+hotel_reservation.add_a_fridge
+p hotel_reservation.amenities
+
 # The add_a_crib method
+hotel_reservation.add_a_crib
+p hotel_reservation.amenities
+
 # The add_a_custom_amenity method
+hotel_reservation.add_a_custom_amenity("bathtub")
+p hotel_reservation.amenities
 

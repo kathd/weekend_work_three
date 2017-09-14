@@ -4,7 +4,7 @@
 
 def sum_of_range(array)
   sorted_array = array.sort
-  (sorted_array[0]..sorted_array[1]).reduce {|sum, num| sum + num}
+  (sorted_array[0]..sorted_array[1]).reduce(:+)
 end
 
 # Driver code - don't touch anything below this line.
